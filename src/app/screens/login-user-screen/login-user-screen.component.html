@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white h-screen flex justify-center items-center">
+
+  <div class="bg-gray-800 p-10 w-96 rounded-lg">
+    <h1 class="text-3xl font-bold mb-6">Login</h1>
+    <form>
+      <!-- Email -->
+      <div class="mb-4">
+        <label class="block text-lg font-medium">Email</label>
+        <input type="email" class="bg-gray-700 text-white rounded px-6 py-3 w-full" placeholder="Email">
+      </div>
+
+      <!-- Password -->
+      <div class="mb-4">
+        <label class="block text-lg font-medium">Password</label>
+        <input type="password" class="bg-gray-700 text-white rounded px-6 py-3 w-full" placeholder="Password">
+      </div>
+
+      <!-- Submit Button -->
+      <button class="bg-green-500 text-white px-12 py-4 rounded hover:bg-green-400 w-full">
+        Login
+      </button>
+    </form>
+    <p class="mt-4 text-center">
+      Don't have an account? <a href="./register.html" class="text-green-400 hover:underline">Register</a>
+    </p>
+  </div>
+
+</body>
+</html>
