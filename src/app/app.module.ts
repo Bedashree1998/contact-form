@@ -7,6 +7,9 @@ import { MainHeaderComponent } from './components/main-header/main-header.compon
 import { LoginUserScreenComponent } from './screens/login-user-screen/login-user-screen.component';
 import { RegisterUserScreenComponent } from './screens/register-user-screen/register-user-screen.component';
 import { AddContactScreenComponent } from './screens/add-contact-screen/add-contact-screen.component';
+import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { TextControlComponent } from './form/text-control/text-control.component'
 
 @NgModule({
   declarations: [
@@ -14,11 +17,16 @@ import { AddContactScreenComponent } from './screens/add-contact-screen/add-cont
     MainHeaderComponent,
     LoginUserScreenComponent,
     RegisterUserScreenComponent,
-    AddContactScreenComponent
+    AddContactScreenComponent,
+    HomeScreenComponent,
+    TextControlComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
