@@ -5,12 +5,13 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
   providedIn: 'root'
 })
 export class ContactsService {
-    private topContacts: BehaviorSubject<Contacts[]> = new BehaviorSubject<Contacts[]>(
-      []
-    );
+  //   private topContacts: BehaviorSubject<Contacts[]> = new BehaviorSubject<Contacts[]>(
+  //     []
+  //   );
 
-    TopContacts$ = this.topContacts.asObservable();
-  }
+  //   TopContacts$ = this.topContacts.asObservable();
+  // }
 
   constructor() { }
 
+}

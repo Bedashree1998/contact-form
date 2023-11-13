@@ -40,6 +40,7 @@ export class RegisterUserScreenComponent {
         ],
         confirmPassword: ["", [Validators.required]]
   });
-}
 
+
+}
 }

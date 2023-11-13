@@ -1,0 +1,13 @@
+<!-- Top Albums -->
+<section class="mb-12">
+    <h2 class="text-3xl text-green-400 mb-4">Contact details</h2>
+    <div class="grid grid-cols-5 gap-4">
+      <!-- Commented after ngStyle Demo and ngClass demo -->
+      <!-- <ms-album-card  [ngStyle]="{ backgroundColor : (i + 1) % 2 ? 'green' : 'blue' }"
+      [ngClass]="{ even: (i + 1) % 2 === 0, odd : (i + 1) % 2 !== 0 }" 
+      [album]="album" *ngFor = "let album of albums; let i = index"></ms-album-card> -->
+  
+      <cf-contact-card  *ngFor="let album of albums; let i = index"></cf-contact-card>
+      <!-- ... Add more albums here -->
+    </div>
+  </section>

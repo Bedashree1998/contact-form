@@ -9,7 +9,9 @@ import { RegisterUserScreenComponent } from './screens/register-user-screen/regi
 import { AddContactScreenComponent } from './screens/add-contact-screen/add-contact-screen.component';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { TextControlComponent } from './form/text-control/text-control.component'
+import { TextControlComponent } from './form/text-control/text-control.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { ContactListingComponent } from './components/contact-listing/contact-listing.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TextControlComponent } from './form/text-control/text-control.component
     RegisterUserScreenComponent,
     AddContactScreenComponent,
     HomeScreenComponent,
-    TextControlComponent
+    TextControlComponent,
+    ContactCardComponent,
+    ContactListingComponent
   ],
   imports: [
     BrowserModule,
