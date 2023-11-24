@@ -7,6 +7,6 @@ import { Contact } from 'src/interfaces/contact';
   styleUrls: ['./contact-listing.component.scss']
 })
 export class ContactListingComponent {
-  @Input() albums: Contact[]= [];
+  @Input() contacts: Contact[]= [];
 
 }

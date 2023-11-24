@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ContactFormService } from 'src/app/services/contact-form.service';
 import { Contact } from 'src/interfaces/contact';
 
 @Component({
@@ -7,6 +8,7 @@ import { Contact } from 'src/interfaces/contact';
   styleUrls: ['./contact-card.component.scss']
 })
 export class ContactCardComponent {
+  constructor(private _contacts: ContactFormService){}
 
   @Input() contact! : Contact;
 

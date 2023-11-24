@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ContactFormService } from 'src/app/services/contact-form.service';
 
 @Component({
   selector: 'cf-add-contact-screen',
@@ -7,7 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./add-contact-screen.component.scss']
 })
 export class AddContactScreenComponent {
-  constructor(private _fb: FormBuilder) {}
+
+  constructor(private _fb: FormBuilder, private _contact: ContactFormService) {}
 
   form!: FormGroup;
 

@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { TextControlComponent } from './form/text-control/text-control.component';
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { ContactListingComponent } from './components/contact-listing/contact-listing.component'
+import { HttpClientModule } from '@angular/common/http'
+import { ContactFormService } from './services/contact-form.service';
 
 @NgModule({
   declarations: [
@@ -29,10 +31,11 @@ import { ContactListingComponent } from './components/contact-listing/contact-li
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
-  providers: [],
+  providers: [ContactFormService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
